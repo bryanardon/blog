@@ -1,18 +1,50 @@
 .App {
   display: grid;
   grid-template-rows: min-content auto;
-  grid-template-columns: 250px auto;
+  /* grid-template-columns: 300px auto; */
   height: 100vh;
   overflow: scroll;
+  background-image: linear-gradient(skyblue, silver);
+}
+
+.SignIn {
+  font-family: "comic sans ms";
+  font-size: 20px;
+  text-align: center;
+  /* justify-self: center;
+  align-self: center;
+  padding-left: 50%; */
+  padding-left: 450px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: peru;
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+}
+/* #greet {
+  float: right;
+} */
+header img {
+  height: 27px;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+#add,
+#out {
+  background-color: white;
+  color: darkslateblue;
+  transition-duration: 1s;
+  border-color: white;
+}
+#add:hover,
+#out:hover {
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 form {
@@ -27,11 +59,13 @@ form textarea {
   margin-bottom: 10px;
   width: 300px;
 }
-
 nav,
 article {
   height: 100%;
   padding: 10px;
+  width: 300px;
+  transition-duration: 1s;
+  text-align: center;
 }
 
 nav {
@@ -41,6 +75,7 @@ nav {
 nav p:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: rgb(189, 167, 46);
 }
 
 article .date {
