@@ -1,7 +1,6 @@
 .App {
   display: grid;
   grid-template-rows: min-content auto;
-  /* grid-template-columns: 300px auto; */
   height: 100vh;
   overflow: scroll;
   background-image: linear-gradient(skyblue, silver);
@@ -11,9 +10,6 @@
   font-family: "comic sans ms";
   font-size: 20px;
   text-align: center;
-  /* justify-self: center;
-  align-self: center;
-  padding-left: 50%; */
   padding-left: 450px;
 }
 
@@ -25,9 +21,7 @@ header {
   grid-column: 1 / span 2;
   padding: 10px 5px;
 }
-/* #greet {
-  float: right;
-} */
+
 header img {
   height: 27px;
   border-radius: 50%;
